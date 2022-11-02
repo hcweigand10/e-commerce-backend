@@ -11,17 +11,7 @@ db.connect(connectionString, {
   useUnifiedTopology: true,
 });
 
-// db.connection
-//   .on("open", () => {
-//     console.log("The goose is loose")
-//     app.listen(PORT, () => {
-//       console.log(`API server running on port ${PORT}!`);
-//     });
-//   })
-//   .on("close", () => console.log("The goose is no longer loose"))
-//   .on("error", (error) => {
-//     console.log(error);
-//     process.exit();
-//   })
 
 module.exports = db;
+
+"mongodb+srv://hcweigand10:<password>@cluster0.uwtknvw.mongodb.net/?retryWrites=true&w=majority"

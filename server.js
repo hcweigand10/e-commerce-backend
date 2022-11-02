@@ -7,11 +7,6 @@ const MongoStore = require("connect-mongo");
 const { v4: uuidv4 } = require('uuid');
 require('dotenv').config()
 
-
-
-
-
-
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -43,7 +38,7 @@ app.use(session({
 );
 
 app.use((req, res, next) => {
-  const allowedOrigins = ['http://localhost:3000', 'https://peter-strasser.netlify.app'];
+  const allowedOrigins = ['http://localhost:3000', 'https://majestic-conkies-6b362d.netlify.app/'];
   const origin = req.headers.origin;
   console.log(origin)
   if (allowedOrigins.includes(origin)) {
